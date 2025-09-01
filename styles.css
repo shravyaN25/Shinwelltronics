@@ -1475,3 +1475,10 @@ textarea:focus {
   position: absolute;
   left: 0;
 }
+.assembly-item img {
+  width: 100%;
+  height: 220px; /* fixed height, adjust as you like */
+  object-fit: cover; /* crops evenly, keeps proportions */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

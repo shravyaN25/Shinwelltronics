@@ -1,293 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Facility - Shinwelltronics</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Facility - Shinwelltronics</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+    }
+
+    /* Facility Section */
+    .facility-section {
+      padding: 40px 20px;
+    }
+    .facility-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .facility-item {
+      flex: 1 1 45%;
+      min-width: 280px;
+      text-align: center;
+    }
+    .facility-item img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .facility-text {
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    /* Equipment Section */
+    .wire-processing-section {
+      padding: 40px 20px;
+      background: #f9f9f9;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .equipment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .equipment-item {
+      text-align: center;
+    }
+    .equipment-item img {
+      width: 100%;
+      max-width: 250px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .equipment-item img:hover {
+      transform: scale(1.05);
+    }
+    .equipment-item h3 {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    /* Responsive Fixes */
+    @media (max-width: 768px) {
+      .facility-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      .facility-item {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+      .facility-text {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">
-                    <img src="img/shinwelltronics-logo.png" alt="Shinwelltronics">
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="services.html" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a href="facility.html" class="nav-link active">Facility</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="img/shinwelltronics-logo.png" alt="Shinwelltronics">
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="work.html" class="nav-link">Work</a></li>
+        <li class="nav-item"><a href="facility.html" class="nav-link active">Facility</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Facility</h1>
+      <p>State-of-the-art manufacturing infrastructure</p>
+    </div>
+  </section>
+
+  <!-- Facility Section -->
+  <section class="facility-section">
+    <div class="facility-grid">
+      <div class="facility-item">
+        <img src="img/portfolio/image.png" alt="Facility 1">
+        <div class="facility-text">
+          <h3>Good Lighting & Ventilation</h3>
+          <ul>
+            <li>5S maintained well</li>
+            <li>Clearly marked layout</li>
+            <li>Gangways are clear</li>
+          </ul>
         </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Our Facility</h1>
-            <p>State-of-the-art manufacturing infrastructure</p>
+      </div>
+      <div class="facility-item">
+        <img src="img/portfolio/image1.png" alt="Facility 2">
+        <div class="facility-text">
+          <h3>Shop Floor Overview</h3>
+          <p><b>Area:</b> 3300 Sq.ft</p>
+          <p><b>Employees:</b> 10</p>
+          <p><b>Total benches:</b> 10</p>
+          <p><b>Current shift:</b> One General Shift (9:30 a.m – 6:30 p.m)</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Shop Overview Section -->
+  <!-- Wire Processing Equipment Section -->
+  <section class="wire-processing-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Wire Processing Equipment</h2>
+        <p>Advanced machinery for precision wire processing and testing</p>
+      </div>
+      <div class="equipment-grid">
+        <div class="equipment-item">
+          <img src="img/portfolio/pic1.png" alt="pic1" onclick="alert('pic1.png')">
+          <h3>Wire Stripping</h3>
+        </div>
+        <div class="equipment-item">
+          <img src="img/portfolio/pic2.jpg" alt="pic2" onclick="alert('pic2.jpg')">
+          <h3>Ferul Marking</h3>
+        </div>
+        <div class="equipment-item">
+          <img src="img/portfolio/pic3.png" alt="pic3" onclick="alert('pic3.png')">
+          <h3>Wire Crimping</h3>
+        </div>
+        <div class="equipment-item">
+          <img src="img/portfolio/pic4.png" alt="pic4" onclick="alert('pic4.png')">
+          <h3>Wire Crimping & Pull Testing</h3>
+        </div>
+        <div class="equipment-item">
+          <img src="img/portfolio/Picture5.jpeg" alt="pic5" onclick="alert('pic5.jpeg')">
+          <h3>Wire Crimping</h3>
+        </div>
+        <div class="equipment-item">
+          <img src="img/portfolio/Picture7.jpg" alt="pic6" onclick="alert('pic6.png')">
+          <h3>Wire Identification</h3>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="work" style="padding-top:20px; margin-top:0;">
-  <div class="container" style="text-align:center;">
 
-    <table style="width:100%; max-width:900px; margin:0 auto; border-spacing:20px;">
-      <tr>
-        <!-- First Image -->
-        <td style="vertical-align:top; text-align:center; width:50%;">
-          <img src="img/portfolio/image.png" alt="Facility 1" class="facility-img">
-          <div class="facility-text">
-            <h3>Good Lighting & Ventilation</h3>
-            <ul>
-              <li>5S maintained well</li>
-              <li>Clearly marked layout</li>
-              <li>Gangways are clear</li>
-            </ul>
-          </div>
-        </td>
-
-        <!-- Second Image -->
-        <td style="vertical-align:top; text-align:center; width:50%;">
-          <img src="img/portfolio/image1.png" alt="Facility 2" class="facility-img">
-          <div class="facility-text">
-            <h3>Shop Floor Overview</h3>
-            <p><b>Area:</b> 3300 Sq.ft</p>
-            <p><b>Employees:</b> 10</p>
-            <p><b>Total benches:</b> 10</p>
-            <p><b>Current shift:</b> One General Shift (9:30 a.m – 6:30 p.m)</p>
-          </div>
-        </td>
-      </tr>
-    </table>
-
+    <!-- Harness & Wire Assembly Section -->
+<section class="harness-wire">
+  <div class="container">
+    <div class="section-header">
+      <h2>Harness & Wire Assembly</h2>
+      <p>Reliable assemblies for diverse industrial needs</p>
+    </div>
+    <div class="assembly-grid">
+      <div class="assembly-item">
+        <img src="img/portfolio/h1.png" alt="Custom Harness">
+        <p>Custom Harness Solutions</p>
+      </div>
+      <div class="assembly-item">
+        <img src="img/portfolio/h2.png" alt="Wire Assembly">
+        <p>Precision Wire Assembly</p>
+      </div>
+      <div class="assembly-item">
+        <img src="img/portfolio/h3.png" alt="Industrial Wiring">
+        <p>Industrial Wiring Support</p>
+      </div>
+    </div>
   </div>
 </section>
 
- 
-
-              
-          
-         
-
-<!-- Wire Processing Equipment Section -->
-<section class="wire-processing-section">
-    <div class="container">
-        <div class="section-header">
-            <h2>Wire Processing Equipment</h2>
-            <p>Advanced machinery for precision wire processing and testing</p>
-        </div>
-
-        <div class="equipment-grid">
-            <!-- Column 1 -->
-            <div class="equipment-column">
-                <div class="equipment-item">
-                    <img src="img/portfolio/pic1.png" alt="pic1" onclick="alert('pic1.png')">
-                    <h3>Wire Stripping</h3>
-                </div>
-                <div class="equipment-item">
-                    <img src="img/portfolio/pic2.jpg" alt="pic2" onclick="alert('pic2.jpg')">
-                    <h3>Ferul Marking</h3>
-                </div>
-            </div>
-
-            <!-- Column 2 -->
-            <div class="equipment-column">
-                <div class="equipment-item">
-                    <img src="img/portfolio/pic3.png" alt="pic3" onclick="alert('pic3.png')">
-                    <h3>Wire Crimping</h3>
-                </div>
-                <div class="equipment-item">
-                    <img src="img/portfolio/pic4.png" alt="pic4" onclick="alert('pic4.png')">
-                    <h3>Wire Crimping & Pull Testing</h3>
-                </div>
-            </div>
-
-            <!-- Column 3 -->
-            <div class="equipment-column">
-                <div class="equipment-item">
-                    <img src="img/portfolio/picture5.jpeg" alt="pic5" onclick="alert('pic5.jpeg')">
-                    <h3>Wire Crimping</h3>
-                </div>
-                <div class="equipment-item">
-                    <img src="img/portfolio/picture7.jpg" alt="pic6" onclick="alert('pic6.png')">
-                    <h3>Wire Identification</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Styling -->
 <style>
-.wire-processing-section {
-    padding: 40px 20px;
-    background: #f9f9f9;
+.harness-wire {
+  padding: 40px 20px;
+  text-align: center;
 }
-.section-header {
-    text-align: center;
-    margin-bottom: 30px;
+.assembly-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
-.equipment-grid {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+.assembly-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.equipment-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.equipment-item {
-    text-align: center;
-}
-.equipment-item img {
-    width: 250px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-.equipment-item img:hover {
-    transform: scale(1.05);
-}
-.equipment-item h3 {
-    margin-top: 10px;
-    font-size: 16px;
+.assembly-item p {
+  margin-top: 10px;
+  font-weight: 500;
 }
 </style>
 
+        
 
-    <!-- Wire Harness Assembly Section -->
-    <section class="wire-harness-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Wire Harness Assembly Process</h2>
-                <p>Comprehensive wire harness assembly with dedicated foam boards for complex assemblies</p>
-            </div>
-            <div class="assembly-grid">
-                <div class="assembly-content">
-                    <h3>Assembly Process Overview</h3>
-                    <p>The wire harness assembly process is completed in several steps to ensure wires are grouped, protected, and connected for electrical systems.</p>
-                    
-                    <div class="process-steps">
-                        <div class="step">
-                            <h4><i class="fas fa-drafting-compass"></i> Design and Planning</h4>
-                            <p>Designers create detailed schematics and layouts based on project requirements, considering component placement, space limitations, environmental conditions, and power needs.</p>
-                        </div>
-                        <div class="step">
-                            <h4><i class="fas fa-cut"></i> Wire Preparation</h4>
-                            <p>Once the design is made, wires are cut to required lengths, and ends are stripped to expose the conductors.</p>
-                        </div>
-                        <div class="step">
-                            <h4><i class="fas fa-tools"></i> Crimping and Soldering</h4>
-                            <p>Technicians attach terminals to wires using crimping tools or soldering, ensuring permanent electrical connections.</p>
-                        </div>
-                        <div class="step">
-                            <h4><i class="fas fa-plug"></i> Assembly of Connectors</h4>
-                            <p>Based on the design layout, terminals are inserted into connectors.</p>
-                        </div>
-                        <div class="step">
-                            <h4><i class="fas fa-shield-alt"></i> Bundling and Protection</h4>
-                            <p>Bundling wires with cable ties, sleeves, and wraps, and implementing protective measures to prevent damage during handling, installation, and operation.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="assembly-types">
-                    <h3>Assembly Types</h3>
-                    <div class="type-grid">
-                        <div class="type-item">
-                            <i class="fas fa-cog"></i>
-                            <h4>Genset & Engine Harness</h4>
-                        </div>
-                        <div class="type-item">
-                            <i class="fas fa-exclamation-triangle"></i>
-                            <h4>E-Stop & Lighting Harness</h4>
-                        </div>
-                        <div class="type-item">
-                            <i class="fas fa-network-wired"></i>
-                            <h4>Wire Assemblies</h4>
-                        </div>
-                        <div class="type-item">
-                            <i class="fas fa-battery-full"></i>
-                            <h4>Battery & Power Cables</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Quality Control Section -->
-    <section class="quality-control-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Quality Control & Testing</h2>
-                <p>Comprehensive quality assurance processes for wire harness assemblies</p>
-            </div>
-            <div class="quality-grid">
-                <div class="quality-content">
-                    <h3>Quality Checks</h3>
-                    <div class="check-list">
-                        <div class="check-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Emergency Harness - Functional Checking</h4>
-                                <p>Functional checking of push button systems</p>
-                            </div>
-                        </div>
-                        <div class="check-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Terminal Block Continuity Checking</h4>
-                                <p>Comprehensive continuity testing of terminal blocks</p>
-                            </div>
-                        </div>
-                        <div class="check-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Wire Assembly - Continuity Checking</h4>
-                                <p>Detailed continuity verification of wire assemblies</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="quality-image">
-                    <img src="img/portfolio/wiring-harness.jpg" alt="Quality Control Testing">
-                    <div class="image-caption">
-                        <p>Advanced testing equipment for continuity and functional verification</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
