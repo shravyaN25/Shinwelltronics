@@ -1380,3 +1380,98 @@ textarea:focus {
         line-height: 1.4;
     }
 }
+/* Work Section - 2 Columns Even on Mobile */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.work-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover img {
+    transform: scale(1.05);
+}
+
+.work-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* Work Section Intro */
+.work-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.work-intro h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.work-intro p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+.facility-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.facility-text {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #444;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.facility-text h3 {
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.facility-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.facility-text ul li {
+  margin-bottom: 4px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.facility-text ul li::before {
+  content: "•";
+  color: #2a7ae2; /* Accent color */
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
