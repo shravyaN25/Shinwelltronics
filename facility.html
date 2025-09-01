@@ -96,53 +96,94 @@
           
          
 
-    <!-- Wire Processing Equipment Section -->
-    <section class="wire-processing-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Wire Processing Equipment</h2>
-                <p>Advanced machinery for precision wire processing and testing</p>
+<!-- Wire Processing Equipment Section -->
+<section class="wire-processing-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Wire Processing Equipment</h2>
+            <p>Advanced machinery for precision wire processing and testing</p>
+        </div>
+
+        <div class="equipment-grid">
+            <!-- Column 1 -->
+            <div class="equipment-column">
+                <div class="equipment-item">
+                    <img src="img/portfolio/pic1.png" alt="pic1" onclick="alert('pic1.png')">
+                    <h3>Wire Stripping</h3>
+                </div>
+                <div class="equipment-item">
+                    <img src="img/portfolio/pic2.jpg" alt="pic2" onclick="alert('pic2.jpg')">
+                    <h3>Ferul Marking</h3>
+                </div>
             </div>
-            <div class="equipment-grid">
+
+            <!-- Column 2 -->
+            <div class="equipment-column">
                 <div class="equipment-item">
-                    <img src="img/crimp-terminals-1.jpg" alt="Wire Stripping Machine">
-                    <div class="equipment-content">
-                        <h3>Wire Stripping Machines</h3>
-                        <p>Automated wire stripping and cutting equipment for precise wire preparation</p>
-                        <ul>
-                            <li>Automated wire cutting</li>
-                            <li>Precision stripping</li>
-                            <li>Consistent quality</li>
-                        </ul>
-                    </div>
+                    <img src="img/portfolio/pic3.png" alt="pic3" onclick="alert('pic3.png')">
+                    <h3>Wire Crimping</h3>
                 </div>
                 <div class="equipment-item">
-                    <img src="img/portfolio/crimp-terminals.jpg" alt="Wire Crimping Equipment">
-                    <div class="equipment-content">
-                        <h3>Wire Crimping & Pull Testing</h3>
-                        <p>Professional crimping tools and pull testing equipment for quality assurance</p>
-                        <ul>
-                            <li>Wire crimping machines</li>
-                            <li>Pull testing equipment</li>
-                            <li>Quality verification</li>
-                        </ul>
-                    </div>
+                    <img src="img/portfolio/pic4.png" alt="pic4" onclick="alert('pic4.png')">
+                    <h3>Wire Crimping & Pull Testing</h3>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="equipment-column">
+                <div class="equipment-item">
+                    <img src="img/portfolio/picture5.jpeg" alt="pic5" onclick="alert('pic5.jpeg')">
+                    <h3>Wire Crimping</h3>
                 </div>
                 <div class="equipment-item">
-                    <img src="img/portfolio/connectors.jpg" alt="Ferrule Marking Machine">
-                    <div class="equipment-content">
-                        <h3>Ferrule Marking Machine</h3>
-                        <p>Advanced marking system for wire identification and traceability</p>
-                        <ul>
-                            <li>Digital marking system</li>
-                            <li>Custom text printing</li>
-                            <li>Wire identification</li>
-                        </ul>
-                    </div>
+                    <img src="img/portfolio/picture7.jpg" alt="pic6" onclick="alert('pic6.png')">
+                    <h3>Wire Identification</h3>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Styling -->
+<style>
+.wire-processing-section {
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.equipment-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.equipment-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.equipment-item {
+    text-align: center;
+}
+.equipment-item img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.equipment-item img:hover {
+    transform: scale(1.05);
+}
+.equipment-item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+</style>
+
 
     <!-- Wire Harness Assembly Section -->
     <section class="wire-harness-section">
